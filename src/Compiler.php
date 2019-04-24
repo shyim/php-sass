@@ -188,11 +188,11 @@ void* malloc(size_t size);
 
         $output = $this->ffi->sass_context_get_output_string($context);
 
+        $this->ffi->sass_delete_file_context($file);
+
         if ($destPath === null) {
             return $output;
         }
-
-        $this->ffi->sass_delete_file_context($file);
 
         file_put_contents($destPath, $output);
 
