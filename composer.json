@@ -1,0 +1,17 @@
+{
+  "name": "shyim/sass",
+  "description": "Provides a easy to use wrapper for libsass",
+  "keywords": ["libsass", "ffi"],
+  "homepage": "https://github.com/shyim/sass",
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "ext-ffi": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ShyimSass\\": "src"
+    }
+  }
+}
